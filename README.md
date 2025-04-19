@@ -14,14 +14,14 @@ In this assignment, I tackle the image classification challenge on a subset of t
 - **Highlights**:  
   - Parameterizable layers (activations, regularization, augmentations)  
   - Modular design to easily swap in different filter sizes and depths  
-- **Source Code**: [A2_Part_A on GitHub](https://github.com/Vishnu000000/DeepLearning_A2/tree/main/A2_Part_A)
+- **Source Code**: [A2_Part_A on GitHub] https://github.com/ragingthunder511/da6401_assignment2/cs24m020_dl_a1_partA.ipynb
 
 ### Part B: Transfer Learning Pipelines
 - **Goal**: Boost accuracy by fine‑tuning backbone networks like InceptionV3, ResNet, and Xception.  
 - **Highlights**:  
   - Options for partial or full unfreezing of base model layers  
   - Customizable classification head with dropout and weight decay  
-- **Source Code**: [A2_Part_B on GitHub](https://github.com/Vishnu000000/DeepLearning_A2/tree/main/A2_Part_B)
+- **Source Code**: [A2_Part_B on GitHub]https://github.com/ragingthunder511/da6401_assignment2/cs24m020_dl_a1_partB.ipynb
 
 ---
 
@@ -31,20 +31,18 @@ In this assignment, I tackle the image classification challenge on a subset of t
 - **Dropout Rates**: 0.0, 0.2, 0.4  
 - **Batch Sizes**: 32, 64  
 - **Use Data Augmentation**: Yes / No
-- **Head Dense Units**: 128, 256, 512 
-
-### Specific to Part A
-- **Activation Choices**: ReLU, ELU, SiLU  
-- **Filter Configurations**: e.g., [32, 64, 128, 256, 512] at different depths  
+- **Head Dense Units**: 128, 256, 512
+- **Activation Choices**: ReLU, ELU, SiLU
 - **L2 Penalty**: 0.0, 5e-5, 5e-4
 - **Learning Rate**: 1e-4, 1e-3
+
+### Specific to Part A
+- **Filter Configurations**: e.g., [32, 64, 128, 256, 512] at different depths  
 - **Filter Size**: e.g., [3,3,3,3,3] at different depths 
   
 
 ### Specific to Part B
 - **Backbone Models**: ResNet, Xception  
- 
-
 ---
 
 ## Detailed Workflow
@@ -80,7 +78,7 @@ In this assignment, I tackle the image classification challenge on a subset of t
 ## Results & Insights
 
 Check out the detailed report on Weights & Biases:  
-[Assignment 2 Report on W&B](https://wandb.ai/cs24m022-iit-madras-foundation/Deep_Learning_Assignment2_cs24m022/reports/Assignment-2--VmlldzoxMjM2NjYyNw)
+https://wandb.ai/karekargrishma1234-iit-madras-/cs24m020_dl_a2_sweep1/reports/CS24M020-DA6401-Assignment-2-Report--VmlldzoxMjM2NjY0OQ
 
 **Key Takeaways**  
 - How freezing various layers affects training dynamics  
