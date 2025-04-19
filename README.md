@@ -61,12 +61,9 @@ Each part logs metrics to Weights & Biases for easy comparison and visualization
    git clone https://github.com/ragingthunder511/da6401_assignment2.git
    cd da6401_assignment2
 
-2 **Install Dependencies**
-  ```bash
-   pip install -r requirements.txt
-3 **Authenticate with Weights & Biases (optional, for logging and visualization)**
-  ```bash
-   wandb.login
+2 **Install Dependencies** - pip install -r requirements.txt
+
+3 **Authenticate with Weights & Biases** - wandb.login
 
 ## Configuration
 
@@ -93,22 +90,20 @@ Each part logs metrics to Weights & Biases for easy comparison and visualization
 
 ### Part A: Custom CNN
 
-#### Launch a hyperparameter sweep
-```bash
+#### Launch a hyperparameter sweep :
 wandb sweep sweep_config.yaml
+
 ### Start the Sweep Agent
-
 To begin a hyperparameter sweep using Weights & Biases, run the following command with your entity and sweep ID:
-
-```bash
 wandb agent YOUR_ENTITY/Assignment2_PartA/SWEEP_ID
+
+
 ### Or Run a Single Experiment Manually
 You can bypass sweeps and launch a specific configuration directly
 
 ## Part B: Transfer Learning
 To fine-tune a pre-trained model (e.g., ResNet50), use the following command:
 
-```bash
 python fine_tune.py \
   --data_dir data/ \
   --backbone resnet50 \
