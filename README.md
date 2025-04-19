@@ -103,23 +103,9 @@ To begin a hyperparameter sweep using Weights & Biases, run the following comman
 ```bash
 wandb agent YOUR_ENTITY/Assignment2_PartA/SWEEP_ID
 ### Or Run a Single Experiment Manually
-
-You can bypass sweeps and launch a specific configuration directly:
-
-```bash
-python train.py \
-  --data_dir data/ \
-  --epochs 25 \
-  --batch_size 64 \
-  --learning_rate 5e-4 \
-  --dropout_rate 0.2 \
-  --weight_decay 1e-5 \
-  --optimizer adam \
-  --wandb_project DL_Assignment2_PartA \
-  --wandb_entity your_entity
+You can bypass sweeps and launch a specific configuration directly
 
 ## Part B: Transfer Learning
-
 To fine-tune a pre-trained model (e.g., ResNet50), use the following command:
 
 ```bash
